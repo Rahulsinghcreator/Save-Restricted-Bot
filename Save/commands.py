@@ -1,8 +1,3 @@
-# ©️ LISA-KOREA | @LISA_FAN_LK | NT_BOT_CHANNEL | LISA-KOREA/Save-Restricted-Bot
-
-# [⚠️ Do not change this repo link ⚠️] :- https://github.com/LISA-KOREA/Save-Restricted-Bot
-
-
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
@@ -17,17 +12,17 @@ async def cancel(client, callback_query):
 def send_start(client, message):
     client.send_message(
         message.chat.id,
-        f"👋 Hi **{message.from_user.mention}**, I am Save Restricted Bot! 🤖\n\n"
+        f" Hi **{message.from_user.mention}**, I am Save Restricted Bot! \n\n"
         "I can help you retrieve and forward restricted content from Telegram posts.\n\n"
         "__For more details on usage, click the Help button below.__\n\n",
         reply_markup=InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton('📍 Update Channel', url='https://t.me/NT_BOT_CHANNEL'),
-                InlineKeyboardButton('👥 Support Group', url='https://t.me/NT_BOTS_SUPPORT'),
+                InlineKeyboardButton('📍 Update Channel', url='https://t.me/saverestrictd'),
+                InlineKeyboardButton('👥 Support Group', url='https://t.me/saverestrictd'),
             ],
             [
-                InlineKeyboardButton('👩‍💻 Developer', url='https://t.me/LISA_FAN_LK'),
+                InlineKeyboardButton('👩‍💻 Developer', url='https://t.me/pheonixdeathnote'),
                 InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             ],
             [
@@ -74,7 +69,6 @@ HELP_TEXT = """
 - Voice Messages
 - Audio Messages
 
-©️ Channel : @NT_BOT_CHANNEL
 """
 
 
